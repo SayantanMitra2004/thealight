@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thealight</title>
-    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="stylesheets/homePage.css">
     <link rel="icon" type="image/png" href="images/logo/thealight_logo.png">
 
 </head>
@@ -15,21 +15,7 @@
     <!-- 1st SECTION -->
     <section class="one section">
 
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo/thealight_logo.png" alt="Thealight Logo">
-            </div>
-
-
-            <div class="links">
-                <a href="#">About Us</a>
-                <a href="#">Workshops</a>
-                <a href="#">Festivals</a>
-                <a href="#">Members</a>
-                <a href="#">Announcements</a>
-                <a href="#">Contact Us</a>
-            </div>
-        </div>
+        <div id="navbar"></div>
 
         <div class="content">
             <div class="center-logo">
@@ -354,46 +340,6 @@
             </div>
         </div>
     </section>
-
-
-    <section class="info-section">
-        <div class="grid">
-
-            <div class="box mission">
-                <h2>Our Mission</h2>
-                <p>
-                    Thealight, a Cultural Dramatic Organization, working since 2001,
-                    based in Kolkata. In 20th June'01, some theatre students under the
-                    leadership & guidance of Atanu Sarkar formed a non profit making
-                    organization
-                </p>
-                <a href="#">Read More</a>
-            </div>
-
-            <div class="box pledge">
-                <h2>Take A<br>Pledge!</h2>
-                <button>Support Us</button>
-            </div>
-
-            <div class="box objectives">
-                <h2>Objectives & Functions</h2>
-                <p>
-                    ealight has received more or less thousand awards and prizes from
-                    National & State Level performances. In the year 2003-2005, 2008,
-                    2011-2016, Thealight organized Eight(8) National & International
-                    Theatre Festival.
-                </p>
-                <a href="#">Read More</a>
-            </div>
-
-            <div class="box gallery">
-                <h2>Photos<br>& Videos</h2>
-                <button>Go to Gallery</button>
-            </div>
-
-        </div>
-    </section>
-
     <!-- members section -->
 
     <section class="members-section">
@@ -495,6 +441,44 @@
 
     </section>
 
+    <section class="info-section">
+        <div class="grid">
+
+            <div class="box mission">
+                <h2>Our Mission</h2>
+                <p>
+                    Thealight, a Cultural Dramatic Organization, working since 2001,
+                    based in Kolkata. In 20th June'01, some theatre students under the
+                    leadership & guidance of Atanu Sarkar formed a non profit making
+                    organization
+                </p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="box pledge">
+                <h2>Take A<br>Pledge!</h2>
+                <button>Support Us</button>
+            </div>
+
+            <div class="box objectives">
+                <h2>Objectives & Functions</h2>
+                <p>
+                    ealight has received more or less thousand awards and prizes from
+                    National & State Level performances. In the year 2003-2005, 2008,
+                    2011-2016, Thealight organized Eight(8) National & International
+                    Theatre Festival.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="box gallery">
+                <h2>Photos<br>& Videos</h2>
+                <button>Go to Gallery</button>
+            </div>
+
+        </div>
+    </section>
+
 
     <section class="donation-section">
         <div class="donation-container">
@@ -522,52 +506,22 @@
         </div>
     </section>
     <!-- footer -->
-    <footer class="footer">
-  <div class="footer-inner">
+    <div id="footer"></div>
 
-    <div class="footer-about">
-      <h3>Thealight</h3>
-      <p>
-        Thealight, a Cultural Dramatic Organization, working since 2001,
-        based in Kolkata. In 20th June'01, some theatre students under
-        the leadership & guidance of Atanu Sarkar formed a non-profit
-        making organization.
-      </p>
-    </div>
+    <script>
+        fetch("partials/navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
 
-    <div class="footer-follow">
-      <h4>Follow Us</h4>
-      <div class="footer-social">
-        <span>f</span>
-        <span>▶</span>
-        <span>◎</span>
-      </div>
-    </div>
+        fetch("partials/footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
 
-    <div class="footer-contact">
-      <h4>Contact Us</h4>
-      <p>✉ thealightkolkata@gmail.com</p>
-      <p>📞 +91 8910824693</p>
-    </div>
-
-    <div class="footer-locate">
-      <h4>Locate Us</h4>
-      <p>
-        📍 Calcutta Training Academy,<br>
-        Girish park, Kolkata – 700006
-      </p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>
-      Copyright 2025 © Thealight | All Rights Reserved<br>
-      The content and images used on this site are copyright protected and
-      copyrights vest with the respective owners. Unauthorized use is prohibited.
-    </p>
-    <span>Made with ❤️ by Thealight Dev Team</span>
-  </div>
-</footer>
+</body>
 
 </html>

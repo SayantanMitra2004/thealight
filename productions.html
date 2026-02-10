@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production</title>
+    <link rel="stylesheet" href="stylesheets/productions.css">
+    <link rel="stylesheet" href="stylesheets/navbar.css">
+    <link rel="icon" type="image/png" href="images/logo/thealight_logo.png">
+</head>
+
+<body>
+    <div class="nav"><div id="navbar"></div></div>
+    
+    <section class="production-overview">
+
+        <!-- TOP : COVER + POSTER + DETAILS -->
+        <div class="production-cover">
+
+            <div class="production-cover-overlay"></div>
+
+            <div class="production-cover-content">
+
+                <!-- Poster -->
+                <div class="production-poster">
+                    <img src="images/WhatsApp Image 2025-10-29 at 14.50.04_349567bf.jpg" alt="Shoytan Poster">
+                </div>
+
+                <!-- Details -->
+                <div class="production-details">
+                    <span class="production-presenter">THEALIGHT PRESENTS</span>
+
+                    <h1 class="production-title">Shoytan</h1>
+
+                    <div class="production-meta">
+                        <span>1h 45m</span>
+                        <span class="meta-separator">•</span>
+                        <span>Action, Thriller</span>
+                    </div>
+
+                    <span class="production-language">Bengali</span>
+
+                    <div class="production-cta">
+                        <a href="#" class="btn-book">Book Tickets</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BOTTOM : ABOUT -->
+        <div class="production-about">
+
+            <div class="production-about-content">
+                <h2 class="production-about-heading">About the act</h2>
+
+                <p class="production-about-text">
+                    Shoytan is a genre-bending, edge-of-the-seat action thriller with big
+                    stars playing iconic characters. Told with audacious swagger, the story
+                    follows a mysterious "traveller" as he slips into the heart of
+                    Karachi's underbelly and rises through its ranks with lethal precision,
+                    only to tear the notorious ISI-underworld nexus apart from within.
+                </p>
+            </div>
+
+            <div class="production-about-actions">
+                <a href="#" class="btn-preview">Preview</a>
+                <a href="#" class="btn-know-more">Know More</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        fetch("partials/navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>
