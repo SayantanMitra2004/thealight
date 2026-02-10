@@ -1111,7 +1111,7 @@ body {
   }
 
   .card-link {
-    flex: 0 0 23vw;
+    flex: 0 0 33vw;
   }
 
   .card-media {
@@ -1119,13 +1119,13 @@ body {
   }
 
   .card {
-    height: 20vh;
-    width: 21vw;
+    height: 29vh;
+    width: 32vw;
   }
 
   .cards {
     padding: 10px 10px;
-    height: 21vh;
+    height: 30vh;
   }
 
   .card-title {
@@ -1364,11 +1364,11 @@ body {
     padding: 20px 0px;
   }
   .team-avatar {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
   }
   .members-section .cards{
-    height:15vh
+    height:20vh
   }
   .team-card {
     flex: 0 0 90px;
