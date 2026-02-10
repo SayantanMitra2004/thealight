@@ -283,7 +283,7 @@ body {
   }
 
   .messageText {
-    font-size: 13px;
+    font-size: 15px;
     padding: 0 20px;
   }
 
@@ -321,7 +321,7 @@ body {
   }
 
   .messageText {
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.6;
   }
 }
